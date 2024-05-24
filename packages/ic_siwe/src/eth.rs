@@ -196,7 +196,7 @@ pub fn eip191_hash(message: &str) -> [u8; 32] {
 ///
 /// A vector of bytes containing the formatted message.
 pub fn eip191_bytes(message: &str) -> Vec<u8> {
-    format!("\x19Ethereum Signed Message:\n{}{}", message.len(), message).into_bytes()
+    format!("\x19Klaytn Signed Message:\n{}{}", message.len(), message).into_bytes()
 }
 
 /// Converts a byte array to an Ethereum address by encoding the bytes to a hexadecimal string and
